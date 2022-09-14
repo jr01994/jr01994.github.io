@@ -46,6 +46,20 @@
     font-size: large;
 }
 
+.Nombres{
+    color: black; 
+    font: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    padding-left: 20px; 
+    border: solid white;
+    border-radius: 20px;
+    margin-left: 80px;
+    padding-right: 50px;
+    margin-right: 1000px;
+    background-color: white;
+}
+
 .EjemplosCodigo{
     color: white; 
     text-align: center;
