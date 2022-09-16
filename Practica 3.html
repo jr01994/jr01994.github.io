@@ -1,0 +1,152 @@
+<pre style="color: rgb(231, 170, 39) ; text-align: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: medium; background-color: rgb(48, 48, 48);"><h2><a href="index.html">Index</a></h2></pre>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilos1.css">
+    <body style="background-color: rgb(10, 10, 10);"></body>
+    <title>Practica 3</title>
+</head>
+    <header><h1 class="TituloPrincipal">&lt; Resumen Capitulo 2 &gt;</h1></header>
+<body>
+	<section>    
+        <h3 class="Subtemas">El papel del archivo de reset CSS</h3>
+                <p class="Parrafo">
+                    Antes de empezar a crear un diseño visual de página Web vamos a ver cómo se utiliza un archivo 
+					de reset de CSS. Todos los elementos HTML se muestran en pantalla utilizando los estilos por defecto que 
+					aplica cada navegador. Por ejemplo: el estilo por defecto para un elemento heading 1 (h1) incluye 
+					unos márgenes de 10 pixels por encima y por debajo del texto. Si queremos modificar el estilo de h1 para que no lleve márgenes, 
+					tendremos que indicar de manera explícita unas reglas que conviertan dichos valores a cero.
+				</p>
+                <p class="Parrafo">
+					Una regla CSS para anular los márgenes superior e inferior de los elementos heading 1 es así:<br>
+			<pre class="EjemplosCodigoCorto">h1
+{
+		        margin-top:0px;
+		        margin-bottom:0px;
+}
+            </pre>
+				</p>
+				<p class="Parrafo">
+					Una técnica para homogeneizar las presentaciones en pantalla consiste en utilizar un archivo CSS de 
+					reset que elimine los estilos por defecto aplicados a los elementos HTML utilizados con más frecuencia. 
+					Con este reseteo de valores podemos conseguir una base fiable y coherente sobre la cual construir nuestros nuevos estilos.
+				</p>
+    </section>
+	
+	<section>    
+        <h3 class="SubtemasLargos">Breve historia de las técnicas de presentación en pantalla para la Web</h3>
+                <p class="Parrafo">
+                    Aunque aquí vas a aprender a crear un diseño visual de página utilizando estilos CSS, debes saber que esto 
+					no ha sido siempre la técnica normal. Cuando se empezó con el diseño web a mediados de los 90, el único método 
+					que se podía emplear para crear estructuras visuales complejas, como por ejemplo la presentación en varias 
+					columnas, consistía en emplear el elemento tabla (table).
+				</p>
+                <p class="Parrafo">
+					CSS ha sustituido ya el empleo de tablas para organizar las páginas, por lo que los elementos 
+					de tabla de HTML van regresando, poco a poco, a su función original, que es la de mostrar datos 
+					estructurados, y abandonan su papel como armazón visual de las páginas.
+				</p>
+    </section>
+	
+	<section>    
+        <h3 class="SubtemasLargos">El elemento div: creación de una estructura CSS de dos columnas con anchura fija</h3>
+                <p class="Parrafo">
+                    Podemos considerar al elemento div como un contenedor genérico en el que podemos poner elementos relacionados entre 
+					sí de forma lógica. La apertura y cierre de etiquetas div suele hacerse rodeando a otros elementos de la página, de forma 
+					que dichos elementos quedan anidados dentro del contenedor. Puedes tener en la misma página todos los elementos div que 
+					consideres necesarios y con frecuencia se utilizan para crear el armazón visual.
+				</p>
+    </section>
+
+    <section>    
+        <h3 class="SubtemasLargos">Añadir estilos para el texto </h3>
+                <p class="Parrafo">
+                  
+                              Antes de seguir con nuestra estructura visual vamos a importar algunos estilos de texto. 
+                              Hasta aquí hemos añadido los estilos dentro de una hoja de estilos interna en vez de hacerlo sobre una externa. 
+                              De momento vamos a asociar una hoja de estilos externa que añade reglas de base para elementos como títulos, listas y párrafos.
+
+					
+				</p>
+    </section>
+
+
+    <section>    
+        <h3 class="Subtemas">¿Que es un CSS?</h3>
+                <p class="Parrafo">
+                    CSS son las siglas en inglés de Cascading Style Sheets, que significa «hojas de esilo en cascada». Es un lenguaje que se 
+                    usa para estilizar elementos escritos en un lenguaje de marcado como HTML. CSS fue desarrollado por W3C (World Wide Web 
+                    Consortium) en 1996 por una razón muy sencilla. HTML no fue diseñado para tener etiquetas que ayuden a formatear la página. 
+                    Está hecho solo para escribir el marcado para el sitio.</p>
+                    <p class="Parrafo">Se incluyeron etiquetas como &lt;font&gt; en HTML versión 3.2, y esto les causó muchos problemas a los 
+                    desarrolladores. Dado que los sitios web tenían diferentes fuentes, fondos de colores y estilos, el proceso de reescribir 
+                    el código fue largo, doloroso y costoso. Por lo tanto, CSS fue creado por W3C para resolver este problema.La relación entre 
+                    HTML y CSS es muy fuerte. Dado que HTML es un lenguaje de marcado (es decir, constituye la base de un sitio) y CSS enfatiza 
+                    el estilo (toda la parte estética de un sitio web), van de la mano. CSS no es técnicamente una necesidad, pero no querrás 
+                    tener un sitio que solo tenga HTML, ya que se vería completamente desnudo.</p>
+    </section>
+    <section>    
+        <h3 class="Subtemas">¿Para que sirve un CSS?</h3>
+        <p class="Parrafo">
+			Con CSS puedes crear reglas para decirle a tu sitio web cómo quieres mostrar la información y guardar los comandos para elementos 
+            de estilo (como fuentes, colores, tamaños, etc.) separados de los que configuran el contenido. Además, puedes crear formatos 
+            específicos útiles para comunicar tus ideas y producir experiencias más agradables visualmente para los usuarios del sitio web.</p>
+        <p class="Parrafo">
+            Al desarrollar una página web es necesario hacer énfasis en la importancia de los elementos visuales para comunicar un mensaje. 
+            La presentación de los datos de una empresa y la usabilidad de la plataforma son factores fundamentales para atraer visitantes a 
+            tu sitio y retener su atención en el contenido que presentas.
+        </p>
+    </section>
+<section>    
+        <h3 class="SubtemasLargos">¿Cual es la diferencia que seria mas difícil de realizar en un sitio web si se optara por no usar un CSS?</h3>
+        <p class="Parrafo">
+			El CSS fue creado para trabajar en conjunto con el HTML. Y debido al concepto que utiliza (la separación de presentación y contenido),
+             la tecnología CSS tiene un estándar muy amplio, con especificaciones, beneficios y posibilidades muy grandes.</p>
+        <p class="Parrafo">
+            Hoy en día encontrarás al CSS en la mayoría de páginas web, ya que es un requisito tan importante como el propio lenguaje de 
+             marcado, si no usaramos css seria mas batalloso darle diseño a nuestra pagina usando solo HTML</p>
+    </section>
+
+        <pre style="color: rgb(231, 170, 39) ; text-align: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 40px; background-color: rgb(48, 48, 48);"><h2>CONCLUSIONES</h2></pre>
+        <h3 class="Nombres">JAIME ALEJANDRO ALVARADO MARTINEZ</h3>
+        <p class="Parrafo">
+		Recordamos la importancia del uso de CSS, es mejor poner todo es un CSS y asi cada vez que tengamos que agregar un diseño a nuestro HTML
+		solo tendremos que usar la etiqueta para dar el diseño deseado porque si nuestro HTML tiene muchas pestañas, tendriamos que agregarlo todo
+		cada vez que usemos el mismo diseño. Una de las desventajas seria solo que agregar una hoja de estilos agregaria tiempo a la pagina y aumentaria
+		su tiempo de carga.
+        </p>
+<h3 class="Nombres">ALBERTO ALVAREZ MARTINEZ</h3>
+        <p class="Parrafo">
+			En la realizacion de esta practica recordamos la importancia de usar CSS para los estilos de una pagina web ya que estas son mas faciles de usar gracias 
+			al css ya que ahi vamos agregando mas diseños a nuestra pagina web, en conclucion de la actividad me parecio importante volver a repasar y reforsar todo 
+			lo conocido sobre css, asi como su historia, y usos.
+        </p>
+<h3 class="Nombres">ARTURO DANIEL QUIRINO RODRIGUEZ</h3>
+        <p class="Parrafo">
+		Despues de haber realizado la redaccion de esta siguiente parte de la documentacion general de HTML y CSS, puedo concluir que HTML al ser un editor de etiquetas, se encuentra
+        muy limitado en la cantidad de funciones que puede llegar a tener, a la hora de hablar de dinamismo y de cosas visuales, es por eso que existe CSS.
+        CSS sirve como extension para cualquier tipo de HTML, siendo utilizado para el diseño, animacion y dinamismo de cualquier pagina web. Esto puede ir desde cambiar el 
+        color de un texto hasta poner objetos o fondos totalmente en movimiento (esto con ayuda de alguna otra herramienta/lenguaje, como JavaScript); dando asi una mejor 
+        calidad visual en nuestras paginas web.
+        </p>
+</p>
+<h3 class="Nombres">LUIS ERNESTO MEDINA RODRIGUEZ</h3>
+        <p class="Parrafo">
+		Al terminar de leer la leccion 3 logre entender el papel de css para crear paginas web que son mejores visualmente hablando, 
+                en las otras lecciones y en otros trabajos previos de otras materias he aprendido a editar textos y a hacer otras cosas mas 
+                enfocadas al estilo en html; cosas que se deben realizar en css simplemente por que ese es su enfoque, cosa que aprendi al leer esta leccion.
+        </p>
+</p>
+<h3 class="Nombres">MIGUEL ANGEL ORTIZ LEAL</h3>
+        <p class="Parrafo">
+		A lo largo de esta practica 3 donde ya se nos da d conocer el papel que tiene el css con el html, y como este se enfoca para complementar
+        al HTML, dando estilos, formas, y colores a las mismas paginas web para asi tener un mejor entendimiento y calidad en las paginas.
+        Esto es importante debido a que con el css podemos cambiar alturas de imagenes, poner diferentes fuentes de textos, fondos animados, colores base a la pagina,
+        recuadros alrededor del texto, etc.
+        </p>
+</body>
+</html>
