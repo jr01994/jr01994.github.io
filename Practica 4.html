@@ -136,11 +136,54 @@ En esta etiqueta se agrega el código que que ayuda a los buscadores a clasifica
 		 Ejemlplo:</p>
 		<p class="EjemplosCodigo"><b>
 width="296" height="250"</b></p> 
-
 	    </p>
     </section>
+  <section>    
+        <h3 class="SubtemasLargos">El papel de CSS</h3>
+                <p class="Parrafo">
+                    CSS nos permite aplicar estilos a los elementos de las paginas web </p>
+    </section>
+	<section>    
+        <h3 class="SubtemasLargos">Definir un estilo para los títulos</h3>
+                <p class="Parrafo">
+                    Para agregar estilo a un titulo usando CSS se agrega en la etiqueta &lt;title&gt; el siguiente texto:</p>
+		<p class="EjemplosCodigo"><b>
+			&ltstyle type="text/css"&gt;</b></p>
+                <p class="Parrafo">
+			Se cierra la etiqueta con &lt;/style&gt; y dentro de ella se escribe </p>
+				<p class="EjemplosCodigo"><b>
+h1 { 
+color: red;
+}</b></p>
+<p class="Parrafo"> Esto cambiara el color del titulo de la pagina de negro a rojo.
+ </p>
+    </section>
+	<section>    
+        <h3 class="SubtemasLargos">Notación hexadecimal de color</h3>
+                <p class="Parrafo">
+                   Este es el sistema que se utiliza para identificar los colores. El código se divide en tres pares de dígitos, y cada uno de ellos representa 
+			el valor RGB del espectro. Por ejemplo, el color blanco se representa en notación RBG como R:255 G:255 B:255, y su equivalente en HTML 
+			en formato hexadecimal es #FFFFFF (siendo FF el equivalente hexadecimal del número 255 decimal, que se repite para los tres pares).</p>
+    </section>
+	</section>
+	<section>    
+        <h3 class="SubtemasLargos">Los estilos de clase y el elemento</h3>
+                <p class="Parrafo">
+                   Para cambiar el estilo de un elemento en particular de un párrafo se utilizan los selectores de clase.</p>
+		<p class="Parrafo">
+                   Para cambiar de color una palabra de un párrafo en una pagina web se escribe lo siguiente debajo de la llave de cierre de la regla h1:</p>
+		<p class="EjemplosCodigo"><b>
+.red {
+      color:red;
+}
+</b></p>
+	<p class="Parrafo">
+                   En el párrafo se escribe la etiqueta &lt;span class="red"&gt; al inicio de la palabra y &lt;/span&gt; al final de esta; y para cambiar el color de un 
+		párrafo se escribe class="red" dentro de la etiqueta
+ </p>
+    </section>
 
-    <section>    
+   <section>    
         <h3 class="SubtemasLargos">¿Qué es XML y para qué sirve?</h3>
                 <p class="Parrafo">
                     XML es un lenguaje de marcado similar a HTML. Significa Extensible Markup Language (Lenguaje de Marcado Extensible) y es 
@@ -190,7 +233,7 @@ width="296" height="250"</b></p>
             </p>
             <p class="Parrafo">
                 Información contextual de la página. Estos metadatos nos permiten indicar información que puede no quedar clara en el 
-                contenido. Por ejemplo, indicar el idioma permite a un navegador de voz (para inviden­ tes) cambiar la pronunciación para 
+                contenido. Por ejemplo, indicar el idioma permite a un navegador de voz (para invidentes) cambiar la pronunciación para 
                 leer correctamente el contenido.
             </p>
             <p class="Parrafo">
