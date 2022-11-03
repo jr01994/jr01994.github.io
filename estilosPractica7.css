@@ -1,0 +1,98 @@
+body {  
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgb(255, 173, 241) 0%, rgb(255, 162, 78)100%);    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 1000px
+}
+
+.container {  display: grid;
+    grid-template-columns: 0.6fr 1.4fr;
+    grid-template-rows: 0.4fr 1.6fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "NavBar NavBar"
+      "Drag Drop";
+  }
+  
+  .NavBar { grid-area: NavBar; }
+  
+  .Drag { grid-area: Drag; }
+  
+  .Drop {  display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.3fr 1.7fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". Titulo ."
+      ". . ."
+      ". . Comprar";
+    grid-area: Drop;
+  }
+  
+  .Comprar { grid-area: Comprar; }
+  
+  .Titulo { grid-area: Titulo; }  
+  
+#div1 {
+    justify-content: center;
+    width: 500px;
+    height: 500px;
+    padding: 10px;
+    border: 4px solid rgb(150, 60, 69);
+    border-radius: 10px;
+    margin-left: 400px;
+    margin-top: 300px;
+  }
+
+.Subtitulos{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 3px solid rgb(150, 60, 69);
+    border-radius: 10px;
+    background-color: rgb(150, 60, 69);
+    margin: 10px;
+    margin-bottom: 100px;
+    color: white;
+}
+
+.Logo{
+    margin: 10px;
+    margin-left: 100px;
+    margin-bottom: 20px;
+}
+.Bar{
+    display: flex;
+    background-color: rgb(248, 100, 115);
+    border: 3px solid rgb(150, 60, 69);
+    border-radius: 20px;
+    justify-content: space-between;
+}
+
+.HiperV{
+    text-align: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 3px solid rgb(150, 60, 69);
+    border-radius: 10px;
+    background-color: rgb(150, 60, 69);
+    margin: 30px;
+    padding: 40px;
+    padding-top: 90px;
+}
+
+.Boton{
+    text-align: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    border: 3px solid rgb(150, 60, 69);
+    border-radius: 10px;
+    background-color: rgb(150, 60, 69);
+    margin: 30px;
+    padding: 20px;  
+}

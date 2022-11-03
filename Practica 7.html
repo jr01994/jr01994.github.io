@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="Styles/estilosPractica7.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 7</title>
+        <script>
+        function allowDrop(ev) {
+          ev.preventDefault();
+        }
+        
+        function drag(ev) {
+          ev.dataTransfer.setData("text", ev.target.id);
+        }
+        
+        function drop(ev) {
+          ev.preventDefault();
+          var data = ev.dataTransfer.getData("text");
+          ev.target.appendChild(document.getElementById(data));
+        }
+        </script>
+</head>
+<body>
+    <div class="container">
+        <div class="NavBar Bar">
+            <img class="Logo" src="images/LogoRopa.png" alt="logoTienda" width="150px" height="150px">
+            <h3 class="HiperV">Inicio</h3>
+            <h3 class="HiperV">Contactos</h3>
+            <h3 class="HiperV">¿Quieres saber mas?</h3>
+
+        </div>
+        <div class="Drag">
+            <h2  class="Subtitulos" style="font-size: 20px">En este apartado se pueden observar todo el inventario de ropa que se encuentra disponible dentro de nuestra sucursal: </h2>
+            <center>
+            <img id="drag1" src="images/ropa (1).png" draggable="true" ondragstart="drag(event)"  width="120" height="120" align="center">
+            <img id="drag1" src="images/ropa (10).png" draggable="true" ondragstart="drag(event)"  width="120" height="120" align="center">
+            <img id="drag1" src="images/ropa (11).png" draggable="true" ondragstart="drag(event)"  width="120" height="120" align="center">
+            <img id="drag1" src="images/ropa (2).png" draggable="true" ondragstart="drag(event)"  width="120" height="120" align="center">
+            <img id="drag1" src="images/ropa (3).png" draggable="true" ondragstart="drag(event)"  width="120" height="120" align="center">
+            <img id="drag1" src="images/ropa (4).png" draggable="true" ondragstart="drag(event)"  width="120" height="120" align="center">
+            <img id="drag1" src="images/ropa (5).png" draggable="true" ondragstart="drag(event)"  width="120" height="120" align="center">
+            <img id="drag1" src="images/ropa (6).png" draggable="true" ondragstart="drag(event)"  width="120" height="120" align="center">
+            <img id="drag1" src="images/ropa (9).png" draggable="true" ondragstart="drag(event)"  width="120" height="120" align="center">
+            </center>
+        </div>
+        <div class="Drop">
+            <div class="Titulo"> <h2 class="Subtitulos" style="font-size: 30px">Por favor, seleccione y suelte la ropa que desea comprar aqui:</h2></div>
+            <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" align="center"></div>
+          <div class="Comprar">
+            <button class="Boton">AGREGAR AL CARRITO</button>
+          </div>
+        </div>
+      </div>
+        <br>       
+</body>
+</html>
