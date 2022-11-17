@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+      <title>LSM Enseñando</title>
+      <meta charset="UTF-8">
+        <link href="estilos1510208.css" rel="stylesheet" type="text/css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+
+
+<header class="header">
+      <div class="contenedor">
+       <img src="Imagenes/logo.png" class="logo">
+        <span class="icon-menu" id="btn-menu"></span>
+        <nav class="nav" id="nav">
+          <ul class="menu">
+            <li class="menu__item"><a  class="menu__link" href="home.html">Index</a></li>
+            <li class="menu__item"><a  class="menu__link" href="primeras clases.html">PIA</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+        
+
+    <script type="text/javascript">
+        var btnMenu = document.getElementById('btn-menu');
+        var nav = document.getElementById('nav');
+        btnMenu.addEventListener('click',function(){
+        nav.classList.toggle('muestrate');
+})
+    </script>
+    
+    <body style="background-color: #392338" onload="startTime()">
+   
+      <div id="clockdate">
+        <div class="clockdate-wrapper">
+          <div id="clock"></div>
+          <div id="date"></div>
+        </div>
+      </div>
+
+      <center>
+        <br>
+            <center><h2 style="color: white;">CONCLUSIÓN PARTE 1</h2></center>
+        <video width="640" height="480" controls="autoplay">
+            <source src="CON1510208 PARTE1.mp4" type="video/mp4" />
+                      </center>
+                      <center>
+                        <br>
+                        <center><h2 style="color: white;">CONCLUSIÓN PARTE 2</h2></center>
+                        <video width="640" height="480" controls="autoplay">
+                            <source src="CON1510208 PARTE2.mp4" type="video/mp4" />
+                                      </center>
+<br>
+
+<center>
+              
+            </center>
+            <br><br>
+                  
+
+
+                  <script>
+                    function startTime() {
+                    var today = new Date();
+                    var hr = today.getHours();
+                    var min = today.getMinutes();
+                    var sec = today.getSeconds();
+                    ap = (hr < 12) ? "<span>AM</span>" : "<span>PM</span>";
+                    hr = (hr == 0) ? 12 : hr;
+                    hr = (hr > 12) ? hr - 12 : hr;
+                    //Add a zero in front of numbers<10
+                    hr = checkTime(hr);
+                    min = checkTime(min);
+                    sec = checkTime(sec);
+                    document.getElementById("clock").innerHTML = hr + ":" + min + ":" + sec + " " + ap;
+                    
+                    var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+                    var days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+                    var curWeekDay = days[today.getDay()];
+                    var curDay = today.getDate();
+                    var curMonth = months[today.getMonth()];
+                    var curYear = today.getFullYear();
+                    var date = curWeekDay+", "+curDay+" "+curMonth+" "+curYear;
+                    document.getElementById("date").innerHTML = date;
+                    
+                    var time = setTimeout(function(){ startTime() }, 500);
+                }
+                function checkTime(i) {
+                    if (i < 10) {
+                        i = "0" + i;
+                    }
+                    return i;
+                }
+                </script>
+</body>
+</html>
