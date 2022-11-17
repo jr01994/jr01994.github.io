@@ -1,0 +1,257 @@
+@keyframes move {
+    100% {
+        transform: translate3d(0, 0, 1px) rotate(360deg);
+    }
+}
+
+.background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: #090a2f;
+    overflow: hidden;
+}
+
+.background span {
+    width: 20vmin;
+    height: 20vmin;
+    border-radius: 20vmin;
+    backface-visibility: hidden;
+    position: absolute;
+    animation: move;
+    animation-duration: 45;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+.background span:nth-child(0) {
+    color: #0d0c5a;
+    top: 6%;
+    left: 4%;
+    animation-duration: 38s;
+    animation-delay: -42s;
+    transform-origin: -12vw 20vh;
+    box-shadow: -40vmin 0 5.364409327317973vmin currentColor;
+}
+.background span:nth-child(1) {
+    color: #0d0c5a;
+    top: 38%;
+    left: 70%;
+    animation-duration: 11s;
+    animation-delay: -16s;
+    transform-origin: 21vw 8vh;
+    box-shadow: 40vmin 0 5.980843389648896vmin currentColor;
+}
+.background span:nth-child(2) {
+    color: #0d0c5a;
+    top: 47%;
+    left: 65%;
+    animation-duration: 23s;
+    animation-delay: -5s;
+    transform-origin: 17vw 11vh;
+    box-shadow: 40vmin 0 5.767074666819634vmin currentColor;
+}
+.background span:nth-child(3) {
+    color: #151842;
+    top: 39%;
+    left: 76%;
+    animation-duration: 28s;
+    animation-delay: -16s;
+    transform-origin: 6vw 13vh;
+    box-shadow: -40vmin 0 5.952444202195505vmin currentColor;
+}
+.background span:nth-child(4) {
+    color: #3a735d;
+    top: 99%;
+    left: 28%;
+    animation-duration: 53s;
+    animation-delay: -26s;
+    transform-origin: 24vw -18vh;
+    box-shadow: 40vmin 0 5.47650344769783vmin currentColor;
+}
+.background span:nth-child(5) {
+    color: #0d0c5a;
+    top: 70%;
+    left: 58%;
+    animation-duration: 19s;
+    animation-delay: -47s;
+    transform-origin: -14vw 20vh;
+    box-shadow: -40vmin 0 5.028539876707727vmin currentColor;
+}
+.background span:nth-child(6) {
+    color: #0d0c5a;
+    top: 38%;
+    left: 39%;
+    animation-duration: 26s;
+    animation-delay: -7s;
+    transform-origin: 21vw -12vh;
+    box-shadow: -40vmin 0 5.733045628735253vmin currentColor;
+}
+.background span:nth-child(7) {
+    color: #0d0c5a;
+    top: 36%;
+    left: 54%;
+    animation-duration: 26s;
+    animation-delay: -18s;
+    transform-origin: -3vw -12vh;
+    box-shadow: 40vmin 0 5.889468037788953vmin currentColor;
+}
+.background span:nth-child(8) {
+    color: #0d0c5a;
+    top: 87%;
+    left: 93%;
+    animation-duration: 12s;
+    animation-delay: -26s;
+    transform-origin: 18vw 18vh;
+    box-shadow: -40vmin 0 5.095717560687259vmin currentColor;
+}
+.background span:nth-child(9) {
+    color: #3a735d;
+    top: 29%;
+    left: 17%;
+    animation-duration: 49s;
+    animation-delay: -40s;
+    transform-origin: 18vw -14vh;
+    box-shadow: -40vmin 0 5.719703238351844vmin currentColor;
+}
+.background span:nth-child(10) {
+    color: #0d0c5a;
+    top: 91%;
+    left: 25%;
+    animation-duration: 9s;
+    animation-delay: -22s;
+    transform-origin: 7vw -18vh;
+    box-shadow: 40vmin 0 5.9875898676149655vmin currentColor;
+}
+.background span:nth-child(11) {
+    color: #151842;
+    top: 54%;
+    left: 11%;
+    animation-duration: 35s;
+    animation-delay: -38s;
+    transform-origin: -6vw -12vh;
+    box-shadow: -40vmin 0 5.830957863916822vmin currentColor;
+}
+.background span:nth-child(12) {
+    color: #151842;
+    top: 65%;
+    left: 71%;
+    animation-duration: 31s;
+    animation-delay: -26s;
+    transform-origin: -11vw 18vh;
+    box-shadow: -40vmin 0 5.9916333409790985vmin currentColor;
+}
+.background span:nth-child(13) {
+    color: #0d0c5a;
+    top: 95%;
+    left: 3%;
+    animation-duration: 45s;
+    animation-delay: -8s;
+    transform-origin: 25vw 21vh;
+    box-shadow: 40vmin 0 5.448166060461793vmin currentColor;
+}
+.background span:nth-child(14) {
+    color: #0d0c5a;
+    top: 94%;
+    left: 54%;
+    animation-duration: 26s;
+    animation-delay: -13s;
+    transform-origin: -1vw 6vh;
+    box-shadow: -40vmin 0 5.929368383023202vmin currentColor;
+}
+.background span:nth-child(15) {
+    color: #3a735d;
+    top: 2%;
+    left: 57%;
+    animation-duration: 35s;
+    animation-delay: -48s;
+    transform-origin: -3vw 4vh;
+    box-shadow: 40vmin 0 5.735028774819384vmin currentColor;
+}
+.background span:nth-child(16) {
+    color: #0d0c5a;
+    top: 65%;
+    left: 66%;
+    animation-duration: 46s;
+    animation-delay: -22s;
+    transform-origin: 8vw -4vh;
+    box-shadow: 40vmin 0 5.797333241615479vmin currentColor;
+}
+.background span:nth-child(17) {
+    color: #151842;
+    top: 63%;
+    left: 26%;
+    animation-duration: 39s;
+    animation-delay: -20s;
+    transform-origin: -24vw -19vh;
+    box-shadow: -40vmin 0 5.725374654525541vmin currentColor;
+}
+.background span:nth-child(18) {
+    color: #3a735d;
+    top: 18%;
+    left: 24%;
+    animation-duration: 24s;
+    animation-delay: -10s;
+    transform-origin: -4vw -21vh;
+    box-shadow: 40vmin 0 5.9309579826963486vmin currentColor;
+}
+.background span:nth-child(19) {
+    color: #151842;
+    top: 89%;
+    left: 59%;
+    animation-duration: 16s;
+    animation-delay: -25s;
+    transform-origin: -11vw 25vh;
+    box-shadow: 40vmin 0 5.458422518568411vmin currentColor;
+}
+
+.container {  display: grid;
+    grid-template-columns: 1.5fr 0.5fr;
+    grid-template-rows: 0.3fr 1.7fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Encabezado Encabezado"
+      "Texto Imagenes";
+  }
+  
+  .Encabezado { grid-area: Encabezado; }
+  
+  .Texto { grid-area: Texto; }
+  
+  .Imagenes { grid-area: Imagenes; }
+
+  .Titulo{
+    -webkit-box-shadow: 0px 26px 31px -10px rgb(61, 120, 196); 
+    box-shadow: 0px 26px 31px -10px rgb(14, 66, 126);
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 75px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   border: 3px solid rgb(8, 49, 95);
+   border-radius: 25px;
+   margin-left: 100px; margin-right: 100px; margin-top: 40px;
+   padding-bottom: 10px;
+   background-color: rgb(8, 49, 95);
+   padding: 25px;
+}  
+
+.Estilo{
+    text-align: justify;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    margin-top: 200px;
+    margin-left: 100px;
+    margin-right: 125px;
+
+}
+
+.Diseño{
+    margin: 50px;
+}
