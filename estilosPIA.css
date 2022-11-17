@@ -1,0 +1,83 @@
+.container {  display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0.3fr 1.8fr 0.9fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Encabezado Encabezado"
+      "Parte1 Parte2"
+      "Parte3 Parte3";
+  }
+  
+  .Encabezado { grid-area: Encabezado; }
+  
+  .Parte1 {  display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Sec1 Sec1 Sec1"
+      "Sec2 Sec2 Sec2";
+    grid-area: Parte1;
+  }
+  
+  .Sec2 { grid-area: Sec2; }
+  
+  .Sec1 { grid-area: Sec1; }
+  
+  .Parte2 {  display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Sec3 Sec3 Sec3"
+      "Sec4 Sec4 Sec4";
+    grid-area: Parte2;
+  }
+  
+  .Sec3 { grid-area: Sec3; }
+  
+  .Sec4 { grid-area: Sec4; }
+  
+  .Parte3 {  display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". Sec5 ."
+      ". Sec5 ."
+      ". Sec5 .";
+    grid-area: Parte3;
+  }
+  
+  .Sec5 { grid-area: Sec5; }
+
+.Box{
+    -webkit-box-shadow: 0px 26px 31px -10px #000000; 
+    box-shadow: 0px 26px 31px -10px #000000;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   border: 3px solid white;
+   border-radius: 25px;
+   margin-left: 50px; margin-right: 50px; margin-top: 150px;
+   padding-bottom: 10px;
+   background-color: white;
+   padding: 25px;
+} 
+
+.Titulo{
+    color: rgb(89, 28, 175); 
+    text-shadow: rgb(199, 140, 238) 0px 0px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 70px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
